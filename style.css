@@ -1,0 +1,9 @@
+body {
+    background-image: url(/assets/fondo-fezta.png);
+    position: absolute;
+    width: 1440px;
+    height: 3957px;
+    left: -18px;
+    top: -16px;
+
+}

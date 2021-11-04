@@ -1,9 +1,161 @@
+:root {
+    --main-floral-white: hsl(46, 100%, 97%);
+    --main-pale-silver: hsl(38, 16%, 76%, 0.6);
+    --main-black-olive: hsl(34, 6%, 24%);
+    --main-eerie-black: hsl(40, 4%, 14%);
+    --main-flame: hsl(17, 83%, 54%);
+    --main-article-box: hsl(0, 0%, 35%);
+    --main-article-box-down: hsl(40, 4%, 51%);
+}
+
 body {
     background-image: url(/assets/fondo-fezta.png);
     position: absolute;
     width: 1440px;
-    height: 3957px;
+    height: 3500px;
     left: -18px;
     top: -16px;
+    
+}
 
+/*header*/
+header {
+    position: relative;
+    width: 1405px;
+    height: 390px;
+}
+
+nav {
+    position: absolute;
+    width: 1404.77px;
+    height: 40px;
+    left: 25px;
+    top: 10px;
+
+    background-color: var(--main-pale-silver);
+    border-radius: 40px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 9px;
+    list-style-type: none;
+}
+
+li {
+    font-size: 1.2em;
+    cursor: pointer;
+
+}
+
+.logo {
+    position: absolute;
+    width: 362px;
+    height: 311px;
+    left: 515px;
+    top: 79px;
+    cursor: crosshair;
+}
+
+/*main*/
+
+
+
+main {
+
+    width: 1346px;
+    height: 2736px;
+    display: flex;
+    flex-direction: column;
+    top: 100px;
+    margin: auto;
+    height: 58%;
+
+
+
+
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    justify-content: space-around;
+
+
+
+}
+
+
+
+
+.box-vertical {
+    width: 280px;
+    height: 370px;
+    background: rgba(196, 196, 196, 0.35);
+    padding-top: 20px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 34px 34px 0px 0px;
+    margin-right: 10px;
+}
+
+.img-vertical {
+    width: 250px;
+    height: 350px;
+}
+
+
+.box-horizontal {
+    width: 389px;
+    height: 215px;
+    background: rgba(196, 196, 196, 0.35);
+    padding-top: 20px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 34px 34px 0px 0px;
+    margin-right: 10px;
+
+}
+
+.img-horizontal {
+    width: 359px;
+    height: 195px;
+
+}
+
+
+button {
+    margin-top: 26px;
+    width: 250px;
+    height: 50px;
+    background: rgba(196, 196, 196, 0.35);
+    border: 0.5px;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+button:hover {
+    background-color: hsla(38, 63%, 54%, 1);
+    font-size: 1.3em;
+}
+
+.button-horizontal {
+    width: 359px;
+    height: 60px;
+    font-size: 1.2em;
+}
+
+.box-contacto {
+    
+    display: flex;
+    width: 70%;
+    height: 550px;
+    background-color:rgba(196, 196, 196, 0.35) ;
+    margin: auto;
+    margin-top: 200px;
+    border-radius: 30px;
 }

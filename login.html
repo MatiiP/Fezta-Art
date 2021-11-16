@@ -9,7 +9,10 @@
 </head>
 <body>
     <div class="box-login" id="box-login">
-        <img class="img-login" src="/assets/login.svg" alt="img-login">
+        <a href="index.html">
+            <img class="img-login" src="/assets/Logo.png" alt="img-login">
+
+        </a>
         <h2>Registrarte</h2>
         <p class="texto-contacto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta molestias, velit
             recusandae, eos
@@ -34,9 +37,9 @@
                 <br>
                 <input class="password" type="password" name="email" placeholder="Ingresa tu contraseña:" required>
             </label>
-            <label for="checkbox">Sexo:
-                M<input class="checkbox" type="checkbox" name="checkbox"  required>
-                F<input class="checkbox" type="checkbox" name="checkbox"  required>
+            <label for="radio">Sexo:
+                M<input class="radio" type="radio" name="checkbox"  required>
+                F<input class="radio" type="radio" name="checkbox"  required>
             </label>
             
             
@@ -52,6 +55,9 @@
             <p><a href="/index.html#ingresar"></a></p>
             <br>
             <br>
+            <label for="reset">
+                <input type="reset" value="Reiniciar" name="reset" class="reset">
+            </label>
             <label for="submit">
                 <input class="submit-ingresar" type="submit" name="submit" value="Registrarme">
             </label>

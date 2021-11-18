@@ -12,12 +12,12 @@
 
 
 body {
-    background-image: url(/assets/fondo-fezta.png); 
-    position: absolute;
-    width: 1440px;
-    height: 3200px;
-    left: -18px;
-    top: -16px;
+    
+    background-image: url(/assets/fondo-fezta.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
     
 }
 
@@ -28,48 +28,87 @@ p {
 
 /*header*/
 header {
-    position: relative;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 390px;
+    
 }
 
 
 .navegador {
-    position: absolute;
-    width: 1404.77px;
-    height: 40px;
-    left: 25px;
-    top: 10px;
+    
+    width: 85%;
+    
+    margin: auto;
     background-color: var(--main-pale-silver);
     border-radius: 40px;
 }
 
 .lista-nav {
     display: flex;
-    justify-content: space-around;
-    margin: 9px;
+
+    justify-content: space-between;
+    
     list-style-type: none;
+    width: 96%;
+}
+
+.list {
+    width: 60px;
+    height: 30px;
+}
+
+.menu {
+    /* display: inline-block; este sera en responsive */
+    display: none;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+}
+
+.list-menu {
+    padding: 10px 10px;
+    border-radius: 20px;
+}
+
+.list-menu:hover {
+    background-color: hsla(38, 63%, 54%, 1);
+
+}
+
+.dropbox {
+    position: absolute;
+    padding: 10px 10px;
+    display: none;
+}
+
+.menu:hover .dropbox {
+    display: block;
 }
 
 li {
     font-size: 1.2em;
     cursor: pointer;
     font-family: 'Roboto Slab', serif;
+    list-style: none;
 
 }
+.lista-nav
 
 a {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    margin-right: 10px;
 }
 
 .logo {
-    position: absolute;
+    
     width: 362px;
     height: 311px;
-    left: 515px;
-    top: 79px;
+    
     cursor: crosshair;
     margin: auto;
 }
@@ -80,13 +119,14 @@ a {
 
 main {
 
-    width: 1346px;
-    height: 2736px;
+    width: 100%;
+    
     display: flex;
     flex-direction: column;
-    top: 100px;
+    margin-top: 100px;
     margin: auto;
-    height: 58%;
+    
+    gap: 100px;
 
 
 
@@ -284,29 +324,34 @@ input[class="submit-ingresar"] {
     padding: 10px 28px 26px 28px;
     margin-left: 149px;
 }
-/*footer*/ 
+
+/*footer*/
+footer {
+    width: 100%;
+    right: 8px;
+    position: relative;
+    top: 8px;
+}
 .footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: rgba(76, 90, 88, 1);
-    position:absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
     height: 35px;
     text-indent: 20px;
     color: white;
     text-align: initial;
     align-items: center;
-    
+
 }
+
 .ul-footer {
     display: flex;
     font-size: .8em;
     margin: 0;
     list-style-type: none;
 }
+
 .lista-footer {
-color: white;
+    color: white;
 }
